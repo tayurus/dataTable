@@ -15,6 +15,7 @@ var distSrc = {
 
 gulp.task('build', function() {
     gulp.src(srcPath.htmlSrc).pipe(gulp.dest(distSrc.dist));
+    gulp.src(srcPath.jsSrc).pipe(concat("script.js")).pipe((gulp.dest(distSrc.dist)));
 
     gulp.src(srcPath.cssSrc).pipe(rename({
         dirname: ''

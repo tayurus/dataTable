@@ -28,6 +28,13 @@
     display: flex;
 }
 
+.active{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 .pagination__prev, .pagination__numbers, .pagination__number, .pagination__ellipsis, .pagination__next  {
     margin: 0px 10px;
     padding: 10px;
