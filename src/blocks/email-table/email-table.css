@@ -1,0 +1,64 @@
+.email-table{
+    max-width: 1360px;
+    margin: auto;
+    padding: 20px 15px;
+}
+
+.email-table label{
+    font-weight: bold;
+}
+
+.email-table__inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.email-table__howManyShow{
+    border-radius: 5px;
+    margin: 0px 5px;
+}
+
+.email-table__input-search{
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.email-table__table-wrapper{
+    overflow-x:auto;
+}
+
+.email-table__table{
+    width: 100%;
+}
+
+.email-table__table tr td{
+    border-bottom: 1px solid #ccc;
+}
+
+.email-table__table tr:not(:nth-child(1)):hover{
+    background: #ccc;
+}
+
+.email-table__table td{
+    text-align: center;
+}
+
+.email-table__view-info{
+    text-decoration: none;
+    background-color: #0082b9;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+@media (max-width:430px),(max-device-width:430px) {
+    .email-table__inputs{
+        flex-direction: column;
+    }
+
+    .email-table__inputs label{
+        margin-bottom: 20px;
+    }
+}
